@@ -343,7 +343,7 @@ class Client {
 
         return $status;
     }
-    
+
     /**
      * Rename Folder
      * @param string  $old_name
@@ -360,7 +360,7 @@ class Client {
 
         return $status;
     }
-    
+
      /**
      * Delete Folder
      * @param string $name
@@ -464,8 +464,9 @@ class Client {
         }
         if (in_array($this->encryption,['tls','ssl'])) {
             $address .= '/'.$this->encryption;
+        }else{
+            $address .= '/notls}';
         }
-        $address .= '}';
 
         return $address;
     }
