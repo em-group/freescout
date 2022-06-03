@@ -17,7 +17,7 @@ yarn-error.log
 
 /bootstrap/compiled.php
 composer.phar
-#composer.lock
+
 .DS_Store
 Thumbs.db
 #/.htaccess
@@ -33,3 +33,4 @@ Thumbs.db
 /tools
 .well-known
 /resources/lang/module.*
+/vendor
