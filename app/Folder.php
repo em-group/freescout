@@ -146,7 +146,7 @@ class Folder extends Model
             case self::TYPE_MINE:
             case self::TYPE_ASSIGNED:
                 $order_by[] = ['status' => 'asc'];
-                $order_by[] = ['last_reply_at' => 'desc'];
+                $order_by[] = ['last_reply_at' => 'asc'];
                 break;
 
             case self::TYPE_STARRED:
